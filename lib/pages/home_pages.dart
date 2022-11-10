@@ -1,15 +1,18 @@
-import 'package:app_04/pages/lists.page.dart';
-import 'package:app_04/pages/inputs.page.dart';
+import 'package:app_04/pages/tarea.pages.dart';
+import 'package:app_04/pages/lists.pages.dart';
+import 'package:app_04/pages/inputs.pages.dart';
 import 'package:app_04/pages/cards.pages.dart';
 import 'package:app_04/pages/alert.pages.dart';
 import 'package:app_04/pages/avatar.pages.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'alert.pages.dart';
+//import 'tarea.pages.dart';
+//import 'alert.pages.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,8 +82,12 @@ class HomePage extends StatelessWidget {
                 toPage: CardsPage(),
               ),
               ItemComponentWidget(
-                title: "Inputs",
+                title: "Input",
                 toPage: InputPage(),
+              ),
+              ItemComponentWidget(
+                title: "Tarea",
+                toPage: TareaPage(),
               ),
               ItemComponentWidget(
                 title: "Lists",
