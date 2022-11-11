@@ -1,9 +1,10 @@
-import 'package:app_04/pages/tarea.pages.dart';
-import 'package:app_04/pages/lists.pages.dart';
-import 'package:app_04/pages/inputs.pages.dart';
-import 'package:app_04/pages/cards.pages.dart';
-import 'package:app_04/pages/alert.pages.dart';
-import 'package:app_04/pages/avatar.pages.dart';
+import 'package:app_04/pages/selection_pages.dart';
+import 'package:app_04/pages/tarea_pages.dart';
+import 'package:app_04/pages/lists_pages.dart';
+import 'package:app_04/pages/inputs_pages.dart';
+import 'package:app_04/pages/cards_pages.dart';
+import 'package:app_04/pages/alert_pages.dart';
+import 'package:app_04/pages/avatar_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -92,6 +93,10 @@ class HomePage extends StatelessWidget {
               ItemComponentWidget(
                 title: "Lists",
                 toPage: ListPage(),
+              ),
+              ItemComponentWidget(
+                title: "Selection",
+                toPage: SelectionPage(),
               ),
               const TextField(
                 obscureText: true,
